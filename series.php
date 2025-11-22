@@ -34,16 +34,20 @@ $series = $stmt->fetchAll();
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <title>Séries - Sen Ciné Club</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1946a24281.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container-fluid bg-dark text-white d-flex justify-content-center align-items-center" style="height: 400px; background: url('images/poster/1.png') no-repeat center center; background-size: cover;">
         <div class="text-center">
@@ -55,7 +59,7 @@ $series = $stmt->fetchAll();
     <div class="container my-5">
         <div class="row gx-5">
             <?php foreach ($series as $serie): ?>
-                <div class="col-md-4">
+                <div class="col-4 col-md-4 mb-4">
                     <div class="card-mb-3">
                         <img src="<?php echo $serie['image_url']; ?>" class="card-img-top" alt="<?php echo $serie['titre']; ?>" style="object-fit: cover;">
                         <div class="my-5 card-body">
@@ -94,4 +98,5 @@ $series = $stmt->fetchAll();
 
     <?php include 'footer.php'; ?>
 </body>
+
 </html>

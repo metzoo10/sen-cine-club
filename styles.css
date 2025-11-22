@@ -8,3 +8,43 @@
   margin-bottom: 40px;
   font-weight: bold;
 }
+
+/* Hover icônes réseaux sociaux*/
+.social-icon i {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+  transform: scale(1.2);
+}
+.social-github i:hover {
+  color: #1B1F23;
+} 
+.social-twitter i:hover {
+  color: #1DA1F2; 
+} 
+.social-linkedin i:hover {
+  color: #0A66C2; 
+}
+
+
+/* Couleur de fond des boutons pagination */
+.page-item .page-link {
+    background-color: #212529;
+    color: #fff; 
+    border: 1px solid #212529; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Au survol */
+.page-item .page-link:hover {
+    background-color: #1c1f22; 
+    color: #fff;
+}
+
+/* Page active */
+.page-item.active .page-link {
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #ffffff;
+}
